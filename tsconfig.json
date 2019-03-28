@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -15,11 +11,23 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "isolatedModules": true
   },
-  "include": [
-    "src"
+  "rules": {
+    "no-console": false, // allow some console statements for debugging
+    "member-access": false, // start without having to write public, private modifiers
+    "jsx-no-lambda": false, // lambdas in render are bad for performance but this can be annoying during prototyping
+    "jsx-boolean-value": false // allow someProp instead of someProp={true}
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "src/tests/selenium/createDriver.js",
+    "webpack",
+    "jest"
   ]
 }
