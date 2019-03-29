@@ -11,8 +11,10 @@ import { createLogger } from 'redux-logger'
 // Reducers
 import config from './config'
 import auth from './auth'
+import todo from './todo'
 // Sagas
 import authSaga from './auth/saga'
+import todoSaga from './todo/saga'
 
 export const history = createBrowserHistory()
 
@@ -32,6 +34,7 @@ export const storeFactory = initialState => {
     router: connectRouter(history),
     config,
     auth,
+    todo,
   })
 
   const pReducer = persistReducer(persistConfig, appReducer)
@@ -43,6 +46,7 @@ export const storeFactory = initialState => {
   )
 
   saga.run(authSaga)
+  saga.run(todoSaga)
 
   return store
 }

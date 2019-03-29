@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 // import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
-import { Switch, /* Route, Redirect */ } from 'react-router'
+import { Switch, Route /*Redirect */ } from 'react-router'
 
 import GlobalStyle from './theme/GlobalStyle'
 import theme from './theme'
@@ -12,16 +12,17 @@ import SessionTimeoutContainer from './auth/containers/SessionTimeoutContainer'
 // import HomePageContainer from './home/containers/HomePageContainer'
 import Header from './common/molecules/Header'
 import StaticIFrameRouter from './external/organisms/StaticIframeRouter'
-
+import TodoPageContainer from './todo/containers/TodoPageContainer'
 const AppContainer = ({ loggedIn }) => {
   return (
     <SessionTimeoutContainer>
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyle />
-          <Header />
+          {/* <Header /> */}
           <Switch>
-            <StaticIFrameRouter />
+            {/* <StaticIFrameRouter /> */}
+            <Route path="/todo" component={TodoPageContainer} />
             {/* <Route path="/login" component={LoginPageContainer} />
             <ProtectedRouteContainer exact path="/" render={() => <Redirect to="/home" />} />
             <ProtectedRouteContainer path="/home" component={HomePageContainer} /> */}
