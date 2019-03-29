@@ -3,7 +3,6 @@ import { todoAdded, actions } from '.'
 
 export function* addTodoSaga({ payload: todo }) {
   try {
-    debugger
     yield put(todoAdded(todo))
   } catch (error) {
     yield error

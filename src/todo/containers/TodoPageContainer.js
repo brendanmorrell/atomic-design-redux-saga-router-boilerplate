@@ -8,7 +8,7 @@ const TodoPageContainer = props => <TodoPage {...props} />
 
 TodoPageContainer.propTypes = {}
 
-const mstp = state => state
+const mstp = state => ({ todos: state.todo.todos })
 
 const mdtp = {
   addTodoAction: addTodo,
