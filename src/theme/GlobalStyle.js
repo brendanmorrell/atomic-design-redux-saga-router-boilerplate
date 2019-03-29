@@ -1,14 +1,23 @@
 import { createGlobalStyle } from 'styled-components'
-import theme from '.'
+import 'normalize.css'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${theme.colors.primary};
+    box-sizing: border-box; 
+    background-color: #FFFFFF;
     color: #656159;
     font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
     input {
       outline: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    a {
+      cursor: pointer;
     }
   }
 `
