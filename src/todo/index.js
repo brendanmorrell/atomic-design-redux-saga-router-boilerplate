@@ -1,15 +1,14 @@
-import { handleActions, createAction } from 'redux-actions'
-import mapActions from '../helpers/mapActions'
-import { addTodoSaga } from './saga'
+import { handleActions, createAction } from 'redux-actions';
+import mapActions from '../helpers/mapActions';
 
-export const actions = mapActions(['ADD_TODO', 'TODO_ADDED'], 'TODO')
+export const actions = mapActions(['ADD_TODO', 'TODO_ADDED'], 'TODO');
 
-export const addTodo = createAction(actions.ADD_TODO)
-export const todoAdded = createAction(actions.TODO_ADDED)
+export const addTodo = createAction(actions.ADD_TODO);
+export const todoAdded = createAction(actions.TODO_ADDED);
 
 const initialState = {
   todos: [],
-}
+};
 
 export default handleActions(
   {
@@ -18,5 +17,5 @@ export default handleActions(
       todos: state.todos.concat(action.payload),
     }),
   },
-  initialState
-)
+  initialState,
+);
