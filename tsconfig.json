@@ -21,7 +21,7 @@
     "jsx-no-lambda": false, // lambdas in render are bad for performance but this can be annoying during prototyping
     "jsx-boolean-value": false // allow someProp instead of someProp={true}
   },
-  "include": ["src"],
+  "include": ["src", ".prettierrc.js"],
   "exclude": [
     "node_modules",
     "build",

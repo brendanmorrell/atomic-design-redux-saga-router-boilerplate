@@ -34,10 +34,28 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "lint": "node_modules/.bin/eslint .",
+    "lint:fix": "node_modules/.bin/eslint . --fix",
+    "lint:css": "stylelint './src/**/*.js'"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "stylelint",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
   },
   "browserslist": [
     ">0.2%",
