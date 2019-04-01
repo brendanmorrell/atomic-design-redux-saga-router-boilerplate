@@ -1,5 +1,5 @@
 export default [
-  // { path: 'home', label: '', url: 'https://www.medmen.com/' },
+  { path: 'home', label: '', url: 'https://www.medmen.com/' },
   {
     path: 'shop',
     label: 'Shop',
