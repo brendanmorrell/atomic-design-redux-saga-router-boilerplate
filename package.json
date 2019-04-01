@@ -39,6 +39,21 @@
     "lint:fix": "node_modules/.bin/eslint . --fix",
     "lint:css": "stylelint './src/**/*.js'"
   },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "custom-env": "^1.0.0",
+    "eslint": "5.6.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-react-hooks": "^1.0.1",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.3",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.0"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
