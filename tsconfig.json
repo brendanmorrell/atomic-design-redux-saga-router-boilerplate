@@ -29,7 +29,6 @@
     "src/tests/selenium/createDriver.js",
     "webpack",
     "jest",
-
     "src/constants/index.js",
     "src/constants/saga.js",
     "src/header/saga.js",
