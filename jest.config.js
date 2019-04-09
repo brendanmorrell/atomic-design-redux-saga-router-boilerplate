@@ -1,6 +1,13 @@
 module.exports = {
+  displayName: 'client',
   coverageDirectory: './coverage',
-  setupTestFrameworkScriptFile: './__test__/setup.js',
+  modulePaths: [
+    '<rootDir>/src',
+    '<rootDir>/test',
+    '<rootDir>/test/modules',
+    '<rootDir>/test/utils',
+  ],
+  setupTestFrameworkScriptFile: require.resolve('./test/setup.js'),
   coverageThreshold: {
     global: {
       statements: 10,

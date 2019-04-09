@@ -12,6 +12,7 @@ import LoginPageContainer from './auth/containers/LoginPageContainer';
 import HomePageContainer from './home/containers/HomePageContainer';
 import Header from './common/molecules/Header';
 import StaticIFrameRouter from './external/organisms/StaticIframeRouter';
+import { history } from './store';
 const AppContainer = ({ loggedIn }) => {
   return (
     <SessionTimeoutContainer>

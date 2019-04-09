@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<span
+  class="Header__Wrapper-f8fmw7-0 ksAHUV"
+>
+  <span
+    class="Header__NavBarWrapper-f8fmw7-1 ljeyRl"
+  >
+    <a
+      class="Header__HomeLink-f8fmw7-2 gOorqE"
+      href="/home"
+    >
+      <img
+        alt="MM"
+        height="40px"
+        src="pot-leaf-with-MM.svg"
+      />
+    </a>
+    <div
+      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
+    >
+      <a
+        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
+        href="/shop"
+      >
+        Shop
+      </a>
+    </div>
+    <div
+      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
+    >
+      <a
+        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
+        href="/brands"
+      >
+        Our Brands
+      </a>
+    </div>
+    <div
+      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
+    >
+      <a
+        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
+        href="/apparel"
+      >
+        Apparel
+      </a>
+    </div>
+    <div
+      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
+    >
+      <a
+        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
+        href="/blog"
+      >
+        EMBER
+      </a>
+    </div>
+    <div
+      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
+    >
+      <a
+        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
+        href="/investors"
+      >
+        Investors
+      </a>
+    </div>
+  </span>
+</span>
+`;
