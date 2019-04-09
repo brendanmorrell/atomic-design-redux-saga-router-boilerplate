@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { storeFactory, history } from '../../src/store';
 
 export const store = storeFactory({});
+
 const customRender = (node, options) =>
   render(
     <Provider store={store}>
@@ -19,6 +20,5 @@ const customRender = (node, options) =>
 
 // re-export everything
 export * from 'react-testing-library';
-
 // override render method
 export { customRender as render };
