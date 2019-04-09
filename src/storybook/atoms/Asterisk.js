@@ -1,7 +1,6 @@
 import React from 'react';
-import { object, PropTypes } from 'prop-types';
-import { Field, formValueSelector, change } from 'redux-form';
-import styled, { css } from 'styled-components'
+import { PropTypes } from 'prop-types';
+import styled from 'styled-components'
 
 const Container = styled.div`
   font-size: 10px;

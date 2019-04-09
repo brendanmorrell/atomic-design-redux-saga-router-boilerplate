@@ -13,7 +13,8 @@ const State = styled.div`
   height: 40px;
   cursor: pointer;
   transition: all .1s;
-
+  line-height: 45px;
+  
   &:hover {
     color: #960709;
   }

@@ -1,12 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { history } from '../../store';
 import $ from 'jquery';
 import uuid from 'uuid';
 
-import AngleSrc from '../../assets/icons/mobile-menu-angle.svg';
 import { hideMobileMenu } from '..';
 
 import MobileMenuLink from './MobileMenuLink';
@@ -59,7 +57,7 @@ class MobileMenuSubNav extends React.Component {
   }
 
   render() {
-    const { sub, nav, hideMobileMenuAction } = this.props;
+    const { nav, hideMobileMenuAction } = this.props;
     const { id, open } = this.state;
 
     return (
@@ -70,24 +68,16 @@ class MobileMenuSubNav extends React.Component {
             history.push(`/${nav.path}`);
             hideMobileMenuAction();
           } else {
+            $(`#main${id}`).css({
+              height: open ? 0 : $(`#wrapper${id}`).innerHeight()
+            })
 
-          
-              console.log('heigh', $(`#wrapper${id}`).innerHeight())
-    
-              $(`#main${id}`).css({
-                height: open ? 0 : $(`#wrapper${id}`).innerHeight()
-              })
-
-              this.setState({ open: !open });
+            this.setState({ open: !open });
           }
-
-
         }}>
       
-      {nav.label}
-      
-      
-      <Icon>{open ? '-' : '+'}</Icon>
+        {nav.label}
+        <Icon>{open ? '-' : '+'}</Icon>
       </Container>
       
       <SubNav
@@ -95,7 +85,6 @@ class MobileMenuSubNav extends React.Component {
         <Wrapper id={`wrapper${id}`}>
 
           { nav.subNav.map((x, i) => {
-            
             return (
               <MobileMenuLink
                 nav={x}

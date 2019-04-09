@@ -1,8 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import { Field, formValueSelector, change } from 'redux-form';
-import styled, { css } from 'styled-components'
-import { connect } from 'react-redux';
+import { Field } from 'redux-form';
 import uuid from 'uuid';
 
 import { Container } from './Form.style.js';
@@ -16,7 +14,6 @@ const Input = ({
   id, 
   style,
   disabled,
-  label,
   inputStyle,
   type,
   color,

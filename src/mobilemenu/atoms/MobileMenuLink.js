@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { history } from '../../store';
@@ -49,18 +48,6 @@ const MobileMenuLink = ({ sub, nav, hideMobileMenuAction }) => (
     }
   </Container>
 );
-
-// SidebarContainer.propTypes = {
-//   showDetails: PropTypes.bool.isRequired,
-//   detailInfo: PropTypes.shape({
-//     component: PropTypes.element,
-//   }).isRequired,
-//   closeAction: PropTypes.func.isRequired,
-// };
-
-// const mstp = state => ({
-//   showMenu: state.sidebar.showMenu,
-// });
 
 const mdtp = {
   hideMobileMenuAction: hideMobileMenu,
