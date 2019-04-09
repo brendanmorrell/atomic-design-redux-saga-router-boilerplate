@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
-import { reduxForm, Form, Field, formValueSelector } from 'redux-form';
+import { reduxForm, Form, } from 'redux-form';
 import { connect } from 'react-redux';
 
 import { setAuthData } from '../';
@@ -16,8 +16,6 @@ import Button from '../../storybook/atoms/Button';
 import Checkbox from '../../storybook/atoms/Checkbox';
 import Asterisk from '../../storybook/atoms/Asterisk';
 
-// const selector = formValueSelector('signup');
-
 const Container = styled.div`
   padding-top: 5px;
 `;
@@ -29,10 +27,8 @@ const Social = styled.div`
   margin-top: 20px;
 `;
 
-const AuthSidebarSignUp = ({ valid,  }) => { // promotions
+const AuthSidebarSignUp = ({ valid,  }) => {
   
-  // console.log('promotions', promotions);
-
   return (
     <Container>
 
@@ -105,17 +101,11 @@ const validate = values => {
   return error;
 };
 
-const mstp = state => ({
-  // promotions: selector(state, 'promotions'),
-});
-
 const mdtp = {
   setAuthDataAction: setAuthData,
 };
 
-export default connect(mstp, mdtp)(reduxForm({
+export default connect(null, mdtp)(reduxForm({
   form: 'signup',
   validate,
 })(AuthSidebarSignUp));
-
-// <div>We'll send sign up confirmation and 10% Off coupon</div>

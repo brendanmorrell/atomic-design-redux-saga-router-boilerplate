@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import MobileMenuLink from '../atoms/MobileMenuLink';
@@ -169,6 +168,8 @@ const MobileMenu = ({ closeAction, }) => {
                   nav={x}
                   key={`mobile-menu${i}`} />
               )
+
+          return null;
         })}
       </Menu>
       <Close onClick={() => closeAction()}>

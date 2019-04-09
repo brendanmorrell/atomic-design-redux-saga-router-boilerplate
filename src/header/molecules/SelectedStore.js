@@ -17,6 +17,7 @@ const Details = styled.div`
   font-weight: 500;
   height: 40px;
   cursor: pointer;
+  line-height: 45px;
   ${breakpoint.down('m')`
     font-size: 16px;
   `}
@@ -27,6 +28,7 @@ const Store = styled.div`
   font-weight: 500;
   height: 40px;
   cursor: pointer;
+  line-height: 45px;
   ${breakpoint.down('m')`
     font-size: 16px;
   `}

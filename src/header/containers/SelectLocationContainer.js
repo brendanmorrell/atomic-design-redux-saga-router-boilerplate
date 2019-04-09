@@ -21,7 +21,6 @@ const Content = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   height: 45px;
-  line-height: 45px;
   transition: all 0.25s;
 `;
 

@@ -55,9 +55,6 @@ const Radio = ({
   disabled,
   label,
   changeAction,
-  inputStyle,
-  color,
-  placeholder,
 }) => {
   return (
     <Container
@@ -66,6 +63,8 @@ const Radio = ({
         if (!disabled) changeAction(name, id, formName);
       }}
     >
+      <input id={id} type="radio" name={name} value={id} onChange={onChange} />
+
       <input id={id} type="radio" name={name} value={id} onChange={onChange} />
 
       <Box>{checked === id && <Checked />}</Box>

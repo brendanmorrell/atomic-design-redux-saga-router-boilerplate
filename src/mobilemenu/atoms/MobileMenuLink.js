@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { history } from '../../store';
@@ -22,7 +21,7 @@ const Container = styled.div`
   box-sizing: border-box;
 
   &:hover {
-    color: #A20000;
+    color: #a20000;
     background-color: #f9f9f9;
   }
 `;
@@ -40,27 +39,13 @@ const MobileMenuLink = ({ sub, nav, hideMobileMenuAction }) => (
         history.push(`/${nav.path}`);
         hideMobileMenuAction();
       }
-    }}>
-
+    }}
+  >
     {nav.label}
 
-    { nav.page &&
-      <Angle src={AngleSrc} alt='Next Page' />
-    }
+    {nav.page && <Angle src={AngleSrc} alt="Next Page" />}
   </Container>
 );
-
-// SidebarContainer.propTypes = {
-//   showDetails: PropTypes.bool.isRequired,
-//   detailInfo: PropTypes.shape({
-//     component: PropTypes.element,
-//   }).isRequired,
-//   closeAction: PropTypes.func.isRequired,
-// };
-
-// const mstp = state => ({
-//   showMenu: state.sidebar.showMenu,
-// });
 
 const mdtp = {
   hideMobileMenuAction: hideMobileMenu,

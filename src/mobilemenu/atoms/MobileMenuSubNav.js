@@ -1,12 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { connect } from 'react-redux';
 import { history } from '../../store';
 import $ from 'jquery';
 import uuid from 'uuid';
 
-import AngleSrc from '../../assets/icons/mobile-menu-angle.svg';
 import { hideMobileMenu } from '..';
 
 import MobileMenuLink from './MobileMenuLink';
@@ -27,7 +25,7 @@ const Container = styled.div`
   background-color: #efefef;
 
   &:hover {
-    color: #A20000;
+    color: #a20000;
     background-color: #f9f9f9;
   }
 `;
@@ -45,10 +43,10 @@ const SubNav = styled.div`
 `;
 
 const Wrapper = styled.div`
+  color: auto;
 `;
 
 class MobileMenuSubNav extends React.Component {
-
   constructor(props) {
     super(props);
 
@@ -59,56 +57,42 @@ class MobileMenuSubNav extends React.Component {
   }
 
   render() {
-    const { sub, nav, hideMobileMenuAction } = this.props;
+    const { nav, hideMobileMenuAction } = this.props;
     const { id, open } = this.state;
 
     return (
-    <>
-      <Container
-        onClick={() => {
-          if (nav.path) {
-            history.push(`/${nav.path}`);
-            hideMobileMenuAction();
-          } else {
-
-          
-              console.log('heigh', $(`#wrapper${id}`).innerHeight())
-    
+      <>
+        <Container
+          onClick={() => {
+            if (nav.path) {
+              history.push(`/${nav.path}`);
+              hideMobileMenuAction();
+            } else {
               $(`#main${id}`).css({
-                height: open ? 0 : $(`#wrapper${id}`).innerHeight()
-              })
+                height: open ? 0 : $(`#wrapper${id}`).innerHeight(),
+              });
 
               this.setState({ open: !open });
-          }
+            }
+          }}
+        >
+          {nav.label}
+          <Icon>{open ? '-' : '+'}</Icon>
+        </Container>
 
-
-        }}>
-      
-      {nav.label}
-      
-      
-      <Icon>{open ? '-' : '+'}</Icon>
-      </Container>
-      
-      <SubNav
-        id={`main${id}`}>
-        <Wrapper id={`wrapper${id}`}>
-
-          { nav.subNav.map((x, i) => {
-            
-            return (
-              <MobileMenuLink
-                nav={x}
-                key={`mobile-menu-sub${i}${id}`} />
-            )
-          })}
-        </Wrapper>
-
-      </SubNav>
-    </>
+        <SubNav id={`main${id}`}>
+          <Wrapper id={`wrapper${id}`}>
+            {nav.subNav.map((x, i) => {
+              return (
+                <MobileMenuLink nav={x} key={`mobile-menu-sub${i}${id}`} />
+              );
+            })}
+          </Wrapper>
+        </SubNav>
+      </>
     );
   }
-};
+}
 
 const mdtp = {
   hideMobileMenuAction: hideMobileMenu,

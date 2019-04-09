@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes, css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { breakpoint } from '../../theme/Mixins';
 
 import PropTypes from 'prop-types';

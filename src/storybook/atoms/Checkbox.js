@@ -1,5 +1,5 @@
 import React from 'react';
-import { object, PropTypes } from 'prop-types';
+import { PropTypes } from 'prop-types';
 import { Field, formValueSelector, change } from 'redux-form';
 import styled, { css } from 'styled-components';
 import { connect } from 'react-redux';
@@ -21,7 +21,7 @@ const Box = styled.div`
   position: relative;
   width: 16px;
   height: 16px;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #aaa;
   cursor: pointer;
   display: inline-block;
   vertical-align: top;

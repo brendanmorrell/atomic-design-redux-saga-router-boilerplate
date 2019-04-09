@@ -1,7 +1,9 @@
 import React from 'react';
-import styled, { keyframes, css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { breakpoint } from '../../theme/Mixins';
 import { connect } from 'react-redux';
+import $ from 'jquery';
+import uuid from 'uuid';
 
 const Menu = styled.div`
   position: absolute;
@@ -12,10 +14,9 @@ const Menu = styled.div`
   border-top: 2px solid #960709;
   box-sizing: border-box;
   background-color: #fff;
-  opacity: 1;
-  visibility: ${props => (props.visible ? 'visible' : 'hidden')};
-  animation: ${props => (props.visible ? fadeIn(1) : fadeOut(1))} 0.1s linear;
-  transition: visibility 0.1s linear;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear;
   ${props =>
     props.type === 'location' &&
     css`
@@ -52,33 +53,44 @@ const Menu = styled.div`
     `}
 `;
 
-const fadeIn = val => keyframes`
-  from {
-    opacity: 0;
+class SelectLocationMenu extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      id: uuid(),
+      visible: false,
+    };
   }
 
-  to {
-    opacity: ${val};
-  }
-`;
+  static getDerivedStateFromProps(nextProps, prevState) {
+    if (nextProps.activeMenu === nextProps.type) {
+      $(`#${prevState.id}`).css({ visibility: 'visible' });
+      setTimeout(() => {
+        $(`#${prevState.id}`).css({ opacity: 1 });
+      }, 10);
+    } else {
+      $(`#${prevState.id}`).css({ opacity: 0 });
 
-const fadeOut = val => keyframes`
-  from {
-    opacity: ${val};
+      setTimeout(() => {
+        $(`#${prevState.id}`).css({ visibility: 'hidden' });
+      }, 210);
+    }
+
+    return null;
   }
 
-  to {
-    opacity: 0;
-  }
-`;
+  render() {
+    const { type, children } = this.props;
+    const { id } = this.state;
 
-const SelectLocationMenu = ({ activeMenu, type, children }) => {
-  return (
-    <Menu visible={type === activeMenu} type={type}>
-      {children}
-    </Menu>
-  );
-};
+    return (
+      <Menu type={type} id={id}>
+        {children}
+      </Menu>
+    );
+  }
+}
 
 const mstp = state => ({
   activeMenu: state.header.activeMenu,
