@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  class="NavigationHeaderContainer__Container-sc-15wz8bx-0 bfEDXE"
+>
+  <div
+    class="NavigationHeaderContainer__Content-sc-15wz8bx-1 eKEtxa"
+  >
+    <img
+      class="NavigationHeaderContainer__Logo-sc-15wz8bx-2 gRjkhR"
+      src="logo.png"
+    />
+    <div
+      class="NavigationBar__Container-sc-1mqwq84-0 LeeJg"
+    >
+      <div
+        class="NavigationLink__Container-zdydky-0 jIDNwV"
+      >
+        <div
+          class="NavigationLink__Title-zdydky-1 jubtma"
+        >
+          <a
+            href="/shop"
+          >
+            Shop
+          </a>
+        </div>
+      </div>
+      <div
+        class="NavigationLink__Container-zdydky-0 jIDNwV"
+      >
+        <div
+          class="NavigationLink__Title-zdydky-1 jubtma"
+        >
+          <span>
+            Our Brands
+          </span>
+        </div>
+      </div>
+      <div
+        class="NavigationLink__Container-zdydky-0 jIDNwV"
+      >
+        <div
+          class="NavigationLink__Title-zdydky-1 jubtma"
+        >
+          <a
+            href="/apparel"
+          >
+            Apparel
+          </a>
+        </div>
+      </div>
+      <div
+        class="NavigationLink__Container-zdydky-0 jIDNwV"
+      >
+        <div
+          class="NavigationLink__Title-zdydky-1 jubtma"
+        >
+          <a
+            href="/blog"
+          >
+            EMBER
+          </a>
+        </div>
+      </div>
+      <div
+        class="NavigationLink__Container-zdydky-0 jIDNwV"
+      >
+        <div
+          class="NavigationLink__Title-zdydky-1 jubtma"
+        >
+          <a
+            href="/investors"
+          >
+            Investors
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="NavigationBar__Overlay-sc-1mqwq84-1 jzhFpb"
+    />
+    <div
+      class="NavigationHeaderContainer__Auth-sc-15wz8bx-3 hCCDtr"
+    >
+      Sign Up
+    </div>
+    <div
+      class="NavigationHeaderContainer__Auth-sc-15wz8bx-3 hCCDtr"
+      style="right: 120px;"
+    >
+      Profile
+    </div>
+    <div
+      class="NavigationHeaderContainer__MobileMenu-sc-15wz8bx-4 kPVmxG"
+    >
+      <img
+        alt="Menu"
+        src="mobile-menu.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

@@ -1,72 +1,333 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot 1`] = `
-<span
-  class="Header__Wrapper-f8fmw7-0 ksAHUV"
+<div
+  class="HeaderContainer__Container-sc-12f71jv-0 dCeWzT"
 >
-  <span
-    class="Header__NavBarWrapper-f8fmw7-1 ljeyRl"
+  <div
+    class="SelectLocationContainer__Container-sc-1udcmzh-0 drzxgz"
   >
-    <a
-      class="Header__HomeLink-f8fmw7-2 gOorqE"
-      href="/home"
+    <div
+      class="SelectLocationContainer__Content-sc-1udcmzh-1 kNvJnx"
+    >
+      <div
+        class="SelectLocationContainer__Wrapper-sc-1udcmzh-2 eHbgbq"
+      >
+        <div
+          class="YourLocation__Mobile-qudshk-0 hWrbcP"
+        >
+          <img
+            alt="Select Location"
+            src="target-address.svg"
+          />
+        </div>
+        <div
+          class="YourLocation__Desktop-qudshk-1 bBLJeZ"
+        >
+          <div
+            class="SelectLocationButton__Container-sc-15as5d8-0 cOlapo"
+            type="location"
+          >
+            <div
+              class="SelectLocationButton__Mobile-sc-15as5d8-5 dxuTPW"
+            >
+              <div
+                class="SelectLocationButton__Label-sc-15as5d8-2 jAGIFS"
+              />
+            </div>
+            <div
+              class="SelectLocationButton__Desktop-sc-15as5d8-4 kZhMlH"
+            >
+              <div
+                class="SelectLocationButton__Header-sc-15as5d8-1 gWyOfy"
+              >
+                Your locations
+              </div>
+              <div
+                class="SelectLocationButton__Label-sc-15as5d8-2 jAGIFS"
+              >
+                No Locations
+              </div>
+            </div>
+            <div
+              class="SelectLocationButton__Arrow-sc-15as5d8-3 jDRwNi"
+            />
+          </div>
+        </div>
+        <div
+          class="SelectLocationMenu__Menu-sc-1035de0-0 hwVMLW"
+          type="location"
+        >
+          <div
+            class="YourLocation__Container-qudshk-2 juvteI"
+          >
+            <img
+              class="YourLocation__Arrow-qudshk-3 gAazDP"
+              src="arrow-up-red.svg"
+            />
+            <img
+              class="YourLocation__Close-qudshk-4 jkqsPg"
+              src="close-blk.svg"
+            />
+            <h1>
+              Personalize your experience
+            </h1>
+            <h2>
+              For the best experience, please update your location.
+            </h2>
+            <div
+              class="YourLocation__Input-qudshk-5 jXHEJI"
+            >
+              <input />
+              <img
+                class="YourLocation__Target-qudshk-6 Wgjfh"
+                src="target-address.svg"
+              />
+            </div>
+            <button
+              class="Button__Container-awnt0e-0 bJqBrT"
+              color="primary"
+              disabled=""
+              style="margin-top: 10px; width: 152px;"
+            >
+              Update
+            </button>
+          </div>
+        </div>
+        <div
+          class="SelectLocationButton__Container-sc-15as5d8-0 gYitdm"
+          type="state"
+        >
+          <div
+            class="SelectLocationButton__Mobile-sc-15as5d8-5 dxuTPW"
+          >
+            <div
+              class="SelectLocationButton__Label-sc-15as5d8-2 jAGIFS"
+            >
+              NV
+            </div>
+          </div>
+          <div
+            class="SelectLocationButton__Desktop-sc-15as5d8-4 kZhMlH"
+          >
+            <div
+              class="SelectLocationButton__Header-sc-15as5d8-1 gWyOfy"
+            >
+              Selected State
+            </div>
+            <div
+              class="SelectLocationButton__Label-sc-15as5d8-2 jAGIFS"
+            >
+              No Store
+            </div>
+          </div>
+          <div
+            class="SelectLocationButton__Arrow-sc-15as5d8-3 jDRwNi"
+          />
+        </div>
+        <div
+          class="SelectLocationMenu__Menu-sc-1035de0-0 bfKYlG"
+          type="state"
+        >
+          <div
+            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+          >
+            Arizona
+          </div>
+          <div
+            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+          >
+            California
+          </div>
+          <div
+            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+          >
+            Florida
+          </div>
+          <div
+            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+          >
+            Illinois
+          </div>
+          <div
+            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+          >
+            Nevada
+          </div>
+          <div
+            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+          >
+            New York
+          </div>
+        </div>
+        <div
+          class="SelectLocationButton__Container-sc-15as5d8-0 dKdrXZ"
+          type="store"
+        >
+          <div
+            class="SelectLocationButton__Mobile-sc-15as5d8-5 dxuTPW"
+          >
+            <div
+              class="SelectLocationButton__Header-sc-15as5d8-1 gWyOfy"
+            >
+              Store
+            </div>
+            <div
+              class="SelectLocationButton__Label-sc-15as5d8-2 jAGIFS"
+            >
+              No Store
+            </div>
+          </div>
+          <div
+            class="SelectLocationButton__Desktop-sc-15as5d8-4 kZhMlH"
+          >
+            <div
+              class="SelectLocationButton__Header-sc-15as5d8-1 gWyOfy"
+            >
+              Selected Store
+            </div>
+            <div
+              class="SelectLocationButton__Label-sc-15as5d8-2 jAGIFS"
+            >
+              No Store
+            </div>
+          </div>
+          <div
+            class="SelectLocationButton__Arrow-sc-15as5d8-3 jDRwNi"
+          />
+        </div>
+        <div
+          class="SelectLocationMenu__Menu-sc-1035de0-0 lpeqMH"
+          type="store"
+        >
+          <div
+            class="SelectedStore__Details-sc-114umlg-0 fphMIP"
+          >
+            See Selected Store Details
+          </div>
+          <div
+            class="SelectedStore__Store-sc-114umlg-1 hWMEoo"
+          >
+            Monterey Bay - Seaside
+          </div>
+          <div
+            class="SelectedStore__Store-sc-114umlg-1 hWMEoo"
+          >
+            San Jose - Central (N 10th & Commercial)
+          </div>
+          <button
+            class="Button__Container-awnt0e-0 fFXPhR"
+            color="primary"
+          >
+            View All Stores
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="SelectLocationContainer__Overlay-sc-1udcmzh-3 fQcvAN"
+  />
+  <div
+    class="NavigationHeaderContainer__Container-sc-15wz8bx-0 bfEDXE"
+  >
+    <div
+      class="NavigationHeaderContainer__Content-sc-15wz8bx-1 eKEtxa"
     >
       <img
-        alt="MM"
-        height="40px"
-        src="pot-leaf-with-MM.svg"
+        class="NavigationHeaderContainer__Logo-sc-15wz8bx-2 gRjkhR"
+        src="logo.png"
       />
-    </a>
-    <div
-      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
-    >
-      <a
-        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
-        href="/shop"
+      <div
+        class="NavigationBar__Container-sc-1mqwq84-0 LeeJg"
       >
-        Shop
-      </a>
-    </div>
-    <div
-      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
-    >
-      <a
-        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
-        href="/brands"
+        <div
+          class="NavigationLink__Container-zdydky-0 jIDNwV"
+        >
+          <div
+            class="NavigationLink__Title-zdydky-1 jubtma"
+          >
+            <a
+              href="/shop"
+            >
+              Shop
+            </a>
+          </div>
+        </div>
+        <div
+          class="NavigationLink__Container-zdydky-0 jIDNwV"
+        >
+          <div
+            class="NavigationLink__Title-zdydky-1 jubtma"
+          >
+            <span>
+              Our Brands
+            </span>
+          </div>
+        </div>
+        <div
+          class="NavigationLink__Container-zdydky-0 jIDNwV"
+        >
+          <div
+            class="NavigationLink__Title-zdydky-1 jubtma"
+          >
+            <a
+              href="/apparel"
+            >
+              Apparel
+            </a>
+          </div>
+        </div>
+        <div
+          class="NavigationLink__Container-zdydky-0 jIDNwV"
+        >
+          <div
+            class="NavigationLink__Title-zdydky-1 jubtma"
+          >
+            <a
+              href="/blog"
+            >
+              EMBER
+            </a>
+          </div>
+        </div>
+        <div
+          class="NavigationLink__Container-zdydky-0 jIDNwV"
+        >
+          <div
+            class="NavigationLink__Title-zdydky-1 jubtma"
+          >
+            <a
+              href="/investors"
+            >
+              Investors
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="NavigationBar__Overlay-sc-1mqwq84-1 jzhFpb"
+      />
+      <div
+        class="NavigationHeaderContainer__Auth-sc-15wz8bx-3 hCCDtr"
       >
-        Our Brands
-      </a>
-    </div>
-    <div
-      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
-    >
-      <a
-        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
-        href="/apparel"
+        Sign Up
+      </div>
+      <div
+        class="NavigationHeaderContainer__Auth-sc-15wz8bx-3 hCCDtr"
+        style="right: 120px;"
       >
-        Apparel
-      </a>
-    </div>
-    <div
-      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
-    >
-      <a
-        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
-        href="/blog"
+        Profile
+      </div>
+      <div
+        class="NavigationHeaderContainer__MobileMenu-sc-15wz8bx-4 kPVmxG"
       >
-        EMBER
-      </a>
+        <img
+          alt="Menu"
+          src="mobile-menu.svg"
+        />
+      </div>
     </div>
-    <div
-      class="Header__LinkWrapper-f8fmw7-3 hRXtEV"
-    >
-      <a
-        class="NavLink__StyledNavLink-awau7i-0 iEczmo"
-        href="/investors"
-      >
-        Investors
-      </a>
-    </div>
-  </span>
-</span>
+  </div>
+</div>
 `;

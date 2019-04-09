@@ -1,12 +1,13 @@
-import { createGlobalStyle } from 'styled-components'
-import 'normalize.css'
+import { createGlobalStyle } from 'styled-components';
+import 'normalize.css';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    box-sizing: border-box; 
-    background-color: #FFFFFF;
-    color: #656159;
-    font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #222;
+    font-family: 'Avenir Next', sans-serif;
+    overflow: hidden;
 
     input {
       outline: none;
@@ -20,6 +21,6 @@ const GlobalStyle = createGlobalStyle`
       cursor: pointer;
     }
   }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
