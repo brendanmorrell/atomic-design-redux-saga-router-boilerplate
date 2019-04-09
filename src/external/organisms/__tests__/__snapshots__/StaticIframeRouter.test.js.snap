@@ -4,6 +4,7 @@ exports[`snapshot 1`] = `
 <iframe
   allowfullscreen=""
   class="IFrame__Iframe-sc-81s4bd-0 jokWXi"
+  data-testid="https://www.medmen.com/"
   frameborder="0"
   src="https://www.medmen.com/"
   title="/"

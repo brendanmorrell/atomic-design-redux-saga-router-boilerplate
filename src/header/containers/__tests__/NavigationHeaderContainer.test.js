@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from 'test-utils';
+import { render, fireEvent, debugDOM } from 'test-utils';
 
 import NavigationHeaderContainer from '../NavigationHeaderContainer';
 import staticSites from '../../../constants/staticSites';
@@ -24,5 +24,6 @@ test('all static links lead to RR routes', () => {
     link = getByTestId(path);
     fireEvent.click(link, leftClick);
     expect(window.location.pathname).toBe(path);
+    // const iframe = get
   });
 });
