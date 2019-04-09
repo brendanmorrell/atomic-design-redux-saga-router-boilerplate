@@ -82,7 +82,9 @@ class NavigationLink extends React.Component {
       >
         <Title>
           {item.url ? (
-            <Link to={item.url}>{item.title}</Link>
+            <Link data-testid={item.url} to={item.url}>
+              {item.title}
+            </Link>
           ) : (
             <span>{item.title}</span>
           )}
@@ -92,7 +94,9 @@ class NavigationLink extends React.Component {
           <Menu>
             {item.menu.map(x => (
               <div key={`submenu-dd-${x.title}`}>
-                <Link to="/shop">{x.title}</Link>
+                <Link data-testid={x.url} to={x.url}>
+                  {x.title}
+                </Link>
               </div>
             ))}
           </Menu>

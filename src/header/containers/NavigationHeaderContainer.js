@@ -72,6 +72,7 @@ const NavigationHeaderContainer = ({
       <Container>
         <Content>
           <Logo
+            data-testid={'/'}
             src={LogoSrc}
             onClick={() => {
               history.push('/');

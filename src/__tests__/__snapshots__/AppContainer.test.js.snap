@@ -55,7 +55,7 @@ exports[`snapshot 1`] = `
           </div>
         </div>
         <div
-          class="SelectLocationMenu__Menu-sc-1035de0-0 hwVMLW"
+          class="SelectLocationMenu__Menu-sc-1035de0-0 ejIPLP"
           type="location"
         >
           <div
@@ -126,36 +126,36 @@ exports[`snapshot 1`] = `
           />
         </div>
         <div
-          class="SelectLocationMenu__Menu-sc-1035de0-0 bfKYlG"
+          class="SelectLocationMenu__Menu-sc-1035de0-0 gDkHuG"
           type="state"
         >
           <div
-            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+            class="SelectedState__State-sc-1cbtdyi-0 IJJwp"
           >
             Arizona
           </div>
           <div
-            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+            class="SelectedState__State-sc-1cbtdyi-0 IJJwp"
           >
             California
           </div>
           <div
-            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+            class="SelectedState__State-sc-1cbtdyi-0 IJJwp"
           >
             Florida
           </div>
           <div
-            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+            class="SelectedState__State-sc-1cbtdyi-0 IJJwp"
           >
             Illinois
           </div>
           <div
-            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+            class="SelectedState__State-sc-1cbtdyi-0 IJJwp"
           >
             Nevada
           </div>
           <div
-            class="SelectedState__State-sc-1cbtdyi-0 duoRqZ"
+            class="SelectedState__State-sc-1cbtdyi-0 IJJwp"
           >
             New York
           </div>
@@ -197,7 +197,7 @@ exports[`snapshot 1`] = `
           />
         </div>
         <div
-          class="SelectLocationMenu__Menu-sc-1035de0-0 lpeqMH"
+          class="SelectLocationMenu__Menu-sc-1035de0-0 eGhacg"
           type="store"
         >
           <div
@@ -236,6 +236,7 @@ exports[`snapshot 1`] = `
     >
       <img
         class="NavigationHeaderContainer__Logo-sc-15wz8bx-2 gRjkhR"
+        data-testid="/"
         src="logo.png"
       />
       <div
@@ -248,6 +249,7 @@ exports[`snapshot 1`] = `
             class="NavigationLink__Title-zdydky-1 jubtma"
           >
             <a
+              data-testid="/shop"
               href="/shop"
             >
               Shop
@@ -272,6 +274,7 @@ exports[`snapshot 1`] = `
             class="NavigationLink__Title-zdydky-1 jubtma"
           >
             <a
+              data-testid="/apparel"
               href="/apparel"
             >
               Apparel
@@ -285,7 +288,8 @@ exports[`snapshot 1`] = `
             class="NavigationLink__Title-zdydky-1 jubtma"
           >
             <a
-              href="/blog"
+              data-testid="/ember"
+              href="/ember"
             >
               EMBER
             </a>
@@ -298,6 +302,7 @@ exports[`snapshot 1`] = `
             class="NavigationLink__Title-zdydky-1 jubtma"
           >
             <a
+              data-testid="/investors"
               href="/investors"
             >
               Investors

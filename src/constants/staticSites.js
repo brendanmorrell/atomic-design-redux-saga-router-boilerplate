@@ -1,21 +1,17 @@
 export default [
-  { path: 'home', label: '', url: 'https://www.medmen.com/' },
-  { path: '', label: '', url: 'https://www.medmen.com/' },
+  { path: '/', url: 'https://www.medmen.com/' },
   {
-    path: 'shop',
-    label: 'Shop',
+    path: '/shop',
     url: 'https://www.medmen.com/stores/',
   },
   {
-    path: 'brands',
-    label: 'Our Brands',
+    path: '/statemade',
     url: 'https://www.medmen.com/statemade',
   },
-  { path: 'apparel', label: 'Apparel', url: 'https://www.medmenshop.com/' },
-  { path: 'blog', label: 'EMBER', url: 'https://www.medmen.com/blog' },
+  { path: '/apparel', url: 'https://www.medmenshop.com/' },
+  { path: '/ember', url: 'https://www.medmen.com/blog' },
   {
-    path: 'investors',
-    label: 'Investors',
+    path: '/investors',
     url: 'https://investors.medmen.com/home/default.aspx',
   },
 ];

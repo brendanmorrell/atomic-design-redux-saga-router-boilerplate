@@ -1,8 +1,7 @@
 import React from 'react';
 import { render } from 'test-utils';
-import AppContainer from '../AppContainer';
-
+import StaticIFrameRouter from '../StaticIframeRouter';
 test('snapshot', () => {
-  const { container } = render(<AppContainer />);
+  const { container } = render(<StaticIFrameRouter />);
   expect(container.firstChild).toMatchSnapshot();
 });

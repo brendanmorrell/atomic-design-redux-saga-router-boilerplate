@@ -67,10 +67,10 @@ class NavigationBar extends React.Component {
       {
         title: 'Our Brands',
         url: null,
-        menu: [{ title: '[statemade]', url: '/brands' }],
+        menu: [{ title: '[statemade]', url: '/statemade' }],
       },
       { title: 'Apparel', url: '/apparel', menu: null },
-      { title: 'EMBER', url: '/blog', menu: null },
+      { title: 'EMBER', url: '/ember', menu: null },
       { title: 'Investors', url: '/investors', menu: null },
     ];
 

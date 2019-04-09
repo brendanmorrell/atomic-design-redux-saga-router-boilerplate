@@ -9,6 +9,7 @@ exports[`snapshot 1`] = `
   >
     <img
       class="NavigationHeaderContainer__Logo-sc-15wz8bx-2 gRjkhR"
+      data-testid="/"
       src="logo.png"
     />
     <div
@@ -21,6 +22,7 @@ exports[`snapshot 1`] = `
           class="NavigationLink__Title-zdydky-1 jubtma"
         >
           <a
+            data-testid="/shop"
             href="/shop"
           >
             Shop
@@ -45,6 +47,7 @@ exports[`snapshot 1`] = `
           class="NavigationLink__Title-zdydky-1 jubtma"
         >
           <a
+            data-testid="/apparel"
             href="/apparel"
           >
             Apparel
@@ -58,7 +61,8 @@ exports[`snapshot 1`] = `
           class="NavigationLink__Title-zdydky-1 jubtma"
         >
           <a
-            href="/blog"
+            data-testid="/ember"
+            href="/ember"
           >
             EMBER
           </a>
@@ -71,6 +75,7 @@ exports[`snapshot 1`] = `
           class="NavigationLink__Title-zdydky-1 jubtma"
         >
           <a
+            data-testid="/investors"
             href="/investors"
           >
             Investors
