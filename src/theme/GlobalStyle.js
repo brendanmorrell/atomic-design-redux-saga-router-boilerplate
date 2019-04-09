@@ -5,9 +5,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box; 
     background-color: #FFFFFF;
-    color: #656159;
-    font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+    /* color: #656159; */
+    color: #222222;
+    font-family: 'Avenir Next', sans-serif;
+    /* font-family: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    overflow: hidden;
+    
     input {
       outline: none;
     }

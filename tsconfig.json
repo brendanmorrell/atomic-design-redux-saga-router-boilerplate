@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,10 +20,10 @@
     "isolatedModules": true
   },
   "rules": {
-    "no-console": false, // allow some console statements for debugging
-    "member-access": false, // start without having to write public, private modifiers
-    "jsx-no-lambda": false, // lambdas in render are bad for performance but this can be annoying during prototyping
-    "jsx-boolean-value": false // allow someProp instead of someProp={true}
+    "no-console": false,
+    "member-access": false,
+    "jsx-no-lambda": false,
+    "jsx-boolean-value": false
   },
   "include": ["src", ".prettierrc.js"],
   "exclude": [
@@ -28,6 +32,15 @@
     "scripts",
     "src/tests/selenium/createDriver.js",
     "webpack",
-    "jest"
+    "jest",
+
+    "src/constants/index.js",
+    "src/constants/saga.js",
+    "src/header/saga.js",
+    "src/header/atoms/SelectLocationMenu.js",
+    "src/auth/organisms/AuthSidebarSignUpPersonalForm.js",
+    "src/storybook/atoms/InputError.js",
+    "src/storybook/atoms/SidebarHeaderButton.js",
+    "src/profile/organisms/ProfileSidebarUpdateEmail.js",
   ]
 }

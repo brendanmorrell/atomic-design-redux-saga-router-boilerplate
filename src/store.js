@@ -7,10 +7,17 @@ import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
 import { routerMiddleware, connectRouter } from 'connected-react-router'
 import { createBrowserHistory } from 'history'
 import { createLogger } from 'redux-logger'
+import { reducer as formReducer } from 'redux-form';
 
 // Reducers
 import config from './config'
 import auth from './auth'
+import constants from './constants'
+import header from './header'
+import sidebar from './sidebar';
+import mobilemenu from './mobilemenu';
+import profile from './profile';
+import notifications from './notifications';
 
 // Sagas
 import authSaga from './auth/saga'
@@ -21,7 +28,7 @@ const persistConfig = {
   key: 'root',
   storage,
   stateReconciler: autoMergeLevel2,
-  whitelist: ['auth', 'config'],
+  whitelist: ['auth', 'config', 'header'],
 }
 
 export const storeFactory = initialState => {
@@ -30,9 +37,16 @@ export const storeFactory = initialState => {
   const saga = createSagaMiddleware()
 
   const appReducer = combineReducers({
-    router: connectRouter(history),
+    router: connectRouter(history),    
+    form: formReducer,
     config,
     auth,
+    constants,
+    header,
+    sidebar,
+    profile,
+    notifications,
+    mobilemenu,
   })
 
   const pReducer = persistReducer(persistConfig, appReducer)

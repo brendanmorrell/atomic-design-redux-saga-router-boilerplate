@@ -7,6 +7,7 @@ const theme = {
     cancel: '#7C7C7C',
     save: '#03553F',
     error: '#f44336',
+    black: '#222222',
   },
 
   fonts: {
