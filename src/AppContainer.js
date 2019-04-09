@@ -1,8 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-// import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
-import { Switch, Route, Redirect } from 'react-router'
+import { Switch, Route } from 'react-router'
 
 import theme from './theme'
 import GlobalStyle from './theme/GlobalStyle'

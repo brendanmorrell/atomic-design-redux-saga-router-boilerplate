@@ -1,19 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
-import { reduxForm, Form, Field, formValueSelector } from 'redux-form';
-import { connect } from 'react-redux';
 
-import { setData } from '../../auth';
-
-// import AuthInputEmail from '../atoms/AuthInputEmail';
-// import AuthInputPassword from '../atoms/AuthInputPassword';
-// import AuthLoginSocial from '../atoms/AuthLoginSocial';
-// import AuthRewardsProgram from '../atoms/AuthRewardsProgram';
-// import Button from '../../storybook/atoms/Button';
 import Input from '../../storybook/atoms/Input';
 import Asterisk from '../../storybook/atoms/Asterisk';
-
-// const selector = formValueSelector('signup');
 
 const Header = styled.div`
   font-weight: 600;
@@ -42,7 +31,7 @@ const Flex = styled.div`
   }
 `;
 
-const ProfileSidebarPersonal = ({ formName,  }) => { // promotions
+const ProfileSidebarPersonal = ({ formName,  }) => {
   console.log('formANme', formName)
   return (
     <div>

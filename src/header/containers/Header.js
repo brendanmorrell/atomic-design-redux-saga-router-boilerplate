@@ -6,6 +6,7 @@ import NavigationHeader from './NavigationHeader';
 
 const Container = styled.div`
   position: fixed;
+  z-index: 3000;
 `;
 
 const Header = () => {
