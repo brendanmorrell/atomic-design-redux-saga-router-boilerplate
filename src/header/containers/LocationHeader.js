@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 import SelectedState from '../molecules/SelectedState';
 import SelectedStore from '../molecules/SelectedStore';
 import YourLocation from '../molecules/YourLocation';
-import SelectLocationButton from '../atoms/SelectLocationButton';
 import { close } from '..';
 
 const Container = styled.div`
@@ -22,7 +21,7 @@ const Content = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   height: 45px;
-  line-height: 45px;
+  /* line-height: 45px; */
   transition: all .25s;
 `;
 

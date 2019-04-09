@@ -4,7 +4,6 @@ import { reduxForm, Form } from 'redux-form';
 import { connect } from 'react-redux';
 
 import { setProfileData } from '../';
-import { addSidebarNotification } from '../../notifications/';
 
 import SidebarHR from '../../sidebar/atoms/SidebarHR';
 import Button from '../../storybook/atoms/Button';
@@ -76,14 +75,6 @@ const ProfileSidebarProfile = ({ user, setProfileDataAction }) => {
 
 const validate = values => {
   const error = {};
-  // const requiredFields = [
-  //   'email',
-  //   'password',
-  // ];
-
-  // requiredFields.forEach(field => {
-  //   if (!values[field]) error[field] = 'Required';
-  // });
 
   return error;
 };

@@ -76,7 +76,7 @@ class NavigationBar extends React.Component {
       { title: 'Investors', url: '/investors', menu: null },
     ];
     
-    return [
+    return (
       <>
         <Container>
           { nav.map((x, i) => 
@@ -90,7 +90,7 @@ class NavigationBar extends React.Component {
         </Container>
         <Overlay visible={(selected && selected.menu ? true : false)} />
       </>
-    ]
+    );
   }
 };
 
