@@ -8,7 +8,7 @@ const StaticIFrameRouter = () =>
   staticSites.map(({ path, url }) => (
     <Route
       key={path}
-      path={`/${path}`}
+      exact path={`/${path}`}
       render={props => <IFrame {...props} url={url} path={path} />}
     />
   ))

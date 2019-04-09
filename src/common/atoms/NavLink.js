@@ -13,7 +13,6 @@ const StyledNavLink = styled(Link)`
   margin-right: 30px;
   margin-top: 0;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   margin-bottom: -1rem;
   padding-bottom: 1rem;
