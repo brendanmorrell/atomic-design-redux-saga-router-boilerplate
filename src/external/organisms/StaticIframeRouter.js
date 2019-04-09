@@ -1,8 +1,8 @@
-import React from 'react'
-import { Route } from 'react-router'
+import React from 'react';
+import { Route } from 'react-router';
 
-import staticSites from '../../constants/staticSites'
-import IFrame from '../atoms/IFrame'
+import staticSites from '../../constants/staticSites';
+import IFrame from '../atoms/IFrame';
 
 const StaticIFrameRouter = () =>
   staticSites.map(({ path, url }) => (
@@ -11,8 +11,8 @@ const StaticIFrameRouter = () =>
       exact path={`/${path}`}
       render={props => <IFrame {...props} url={url} path={path} />}
     />
-  ))
+  ));
 
-StaticIFrameRouter.propTypes = {}
+StaticIFrameRouter.propTypes = {};
 
-export default StaticIFrameRouter
+export default StaticIFrameRouter;

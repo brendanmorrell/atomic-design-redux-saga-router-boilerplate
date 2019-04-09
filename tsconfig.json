@@ -25,9 +25,7 @@
     "jsx-no-lambda": false,
     "jsx-boolean-value": false
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src", ".prettierrc.js"],
   "exclude": [
     "node_modules",
     "build",

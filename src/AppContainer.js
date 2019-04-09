@@ -29,19 +29,21 @@ const AppContainer = ({ loggedIn }) => {
           <Switch>
             <Route path="/updatepassword" component={AuthUpdatePassword} />
             <StaticIFrameRouter />
-            {/* <Route path="/login" component={LoginPageContainer} />
+            {/* 
+            <Route path="/login" component={LoginPageContainer} />
             <Route exact path="/" render={() => <Redirect to="/home" />} />
-            <ProtectedRouteContainer path="/home" component={HomePageContainer} /> */}
+            <ProtectedRouteContainer path="/home" component={HomePageContainer} /> 
+            */}
           </Switch>
         </>
       </ThemeProvider>
     </SessionTimeoutContainer>
-  )
-}
+  );
+};
 
-const mstp = state => ({ loggedIn: state.auth.loggedIn })
+const mstp = state => ({ loggedIn: state.auth.loggedIn });
 
 export default connect(
   mstp,
-  null
-)(AppContainer)
+  null,
+)(AppContainer);
