@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components'
-import { reduxForm, Form, } from 'redux-form';
+import styled from 'styled-components';
+import { reduxForm, Form } from 'redux-form';
 import { connect } from 'react-redux';
 
 import { setAuthData } from '../';
@@ -27,72 +27,66 @@ const Social = styled.div`
   margin-top: 20px;
 `;
 
-const AuthSidebarSignUp = ({ valid,  }) => {
-  
+const AuthSidebarSignUp = ({ valid }) => {
   return (
     <Container>
+      <AuthLoginSocial media="fb" type="signup" />
 
-      <AuthLoginSocial media='fb' type='signup' />
-
-      <AuthLoginSocial media='google' type='signup' />
+      <AuthLoginSocial media="google" type="signup" />
 
       <Social>
-        Signing Up with social is super quick. No extra passwords to remember - no brain fail. Don't worry, we'd never share any of your data or post anything on your behalf #shopmedmen.
+        Signing Up with social is super quick. No extra passwords to remember -
+        no brain fail. Don't worry, we'd never share any of your data or post
+        anything on your behalf #shopmedmen.
       </Social>
 
-      <SidebarHR
-        label='OR' />
-        
+      <SidebarHR label="OR" />
 
       <Form>
         <AuthInputEmail />
         <Asterisk
-          content={`We'll send sign up confirmation and<span style="color:#A20000"> 10% Off coupon</span>`} />
+          content={`We'll send sign up confirmation and<span style="color:#A20000"> 10% Off coupon</span>`}
+        />
         <AuthInputPassword />
-        <Asterisk
-          content={`Must be 8 or more characters`} />
-        
+        <Asterisk content={`Must be 8 or more characters`} />
+
         <Checkbox
-          name='promotions'
-          formName='signup'
-          label='Yes, I would like to receive emails regarding special promotions and product updates.' />
-      
-        <ProfileRewardsProgram formName='signup' />
+          name="promotions"
+          formName="signup"
+          label="Yes, I would like to receive emails regarding special promotions and product updates."
+        />
+
+        <ProfileRewardsProgram formName="signup" />
 
         <ProfileSidebarPersonal />
-        
-        <ProfileSidebarGender
-          formName='signup' />
-        
+
+        <ProfileSidebarGender formName="signup" />
+
         <Checkbox
-          name='privacy'
-          formName='signup'
-          label='I agree to MedMen collecting, processing, and storing my data in creating and maintaining an account.'
-          style={{marginTop: 20}} />
-        
+          name="privacy"
+          formName="signup"
+          label="I agree to MedMen collecting, processing, and storing my data in creating and maintaining an account."
+          style={{ marginTop: 20 }}
+        />
+
         <Checkbox
-          name='tos'
-          formName='signup'
-          label='I agree to the MedMen Terms of Service and Privacy Policy.'
-          style={{marginTop: 20}} />
+          name="tos"
+          formName="signup"
+          label="I agree to the MedMen Terms of Service and Privacy Policy."
+          style={{ marginTop: 20 }}
+        />
       </Form>
 
-      <Button 
-        style={{marginTop:'20px'}}
-        disabled={!valid}>
-        
+      <Button style={{ marginTop: '20px' }} disabled={!valid}>
         Join MedMen
       </Button>
     </Container>
-  )
+  );
 };
 
 const validate = values => {
   const error = {};
-  const requiredFields = [
-    'email',
-    'password',
-  ];
+  const requiredFields = ['email', 'password'];
 
   requiredFields.forEach(field => {
     if (!values[field]) error[field] = 'Required';
@@ -105,7 +99,12 @@ const mdtp = {
   setAuthDataAction: setAuthData,
 };
 
-export default connect(null, mdtp)(reduxForm({
-  form: 'signup',
-  validate,
-})(AuthSidebarSignUp));
+export default connect(
+  null,
+  mdtp,
+)(
+  reduxForm({
+    form: 'signup',
+    validate,
+  })(AuthSidebarSignUp),
+);

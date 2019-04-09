@@ -9,9 +9,9 @@ import InputError from './InputError';
 
 const Input = ({
   input: { value, onChange, name, ...input },
-  meta: { touched, error, },
+  meta: { touched, error },
 
-  id, 
+  id,
   style,
   disabled,
   inputStyle,
@@ -19,25 +19,24 @@ const Input = ({
   color,
   placeholder,
 }) => {
-
   return (
     <Container id={id} style={style} inputStyle={inputStyle} color={color}>
-
-      <input 
-        type={type} 
-        name={name} 
+      <input
+        type={type}
+        name={name}
         onChange={onChange}
         disabled={disabled}
-        placeholder={placeholder} />
+        placeholder={placeholder}
+      />
 
-      { touched && error && <InputError error={error} /> }
+      {touched && error && <InputError error={error} />}
     </Container>
-  )
+  );
 };
 
 Input.propTypes = {
   id: PropTypes.string,
-  disabled: PropTypes.bool,  
+  disabled: PropTypes.bool,
   name: PropTypes.string.isRequired,
   label: PropTypes.string,
 };

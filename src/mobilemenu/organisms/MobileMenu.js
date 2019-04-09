@@ -35,8 +35,7 @@ const CloseIcon = styled.div`
   text-align: center;
 `;
 
-const MobileMenu = ({ closeAction, }) => {
-  
+const MobileMenu = ({ closeAction }) => {
   const nav = [
     {
       label: 'Shop',
@@ -50,13 +49,15 @@ const MobileMenu = ({ closeAction, }) => {
       subNav: null,
       page: {
         title: 'Our Brands',
-        nav: [{
-          label: '[statemade]',
-          path: 'statemade',
-          subNav: null,
-          page: null,
-        }],
-      }
+        nav: [
+          {
+            label: '[statemade]',
+            path: 'statemade',
+            subNav: null,
+            page: null,
+          },
+        ],
+      },
     },
     {
       label: 'Apparel',
@@ -84,7 +85,7 @@ const MobileMenu = ({ closeAction, }) => {
           label: 'Store Locator',
           path: 'stores',
           subNav: null,
-          page: null,        
+          page: null,
         },
         {
           label: 'Gift Cards',
@@ -104,7 +105,7 @@ const MobileMenu = ({ closeAction, }) => {
           label: 'Our Team',
           path: 'who-we-are/#team',
           subNav: null,
-          page: null,        
+          page: null,
         },
         {
           label: 'What we do',
@@ -136,7 +137,7 @@ const MobileMenu = ({ closeAction, }) => {
           label: 'Contact Us',
           path: 'contact',
           subNav: null,
-          page: null,        
+          page: null,
         },
         {
           label: 'FAQ',
@@ -153,21 +154,12 @@ const MobileMenu = ({ closeAction, }) => {
   return (
     <Container>
       <Menu>
-        { nav.map((x, i) => {
-
+        {nav.map((x, i) => {
           if (!x.subNav)
-            return (
-              <MobileMenuLink 
-                nav={x}
-                key={`mobile-menu${i}`} />
-            )
+            return <MobileMenuLink nav={x} key={`mobile-menu${i}`} />;
 
           if (x.subNav)
-              return (
-                <MobileMenuSubNav 
-                  nav={x}
-                  key={`mobile-menu${i}`} />
-              )
+            return <MobileMenuSubNav nav={x} key={`mobile-menu${i}`} />;
 
           return null;
         })}

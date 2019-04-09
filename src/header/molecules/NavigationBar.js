@@ -73,7 +73,7 @@ class NavigationBar extends React.Component {
       { title: 'EMBER', url: '/ember', menu: null },
       { title: 'Investors', url: '/investors', menu: null },
     ];
-    
+
     return (
       <>
         <Container>
